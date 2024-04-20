@@ -1,0 +1,95 @@
+body { 
+	
+	margin: 0 auto;
+	text-align: justify;
+	border: 5px solid purple;
+	font-family: Times New Roman;
+	background-color: lightgrey;
+	max-width: 1000px;
+	overflow: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited{
+	color:red;
+}
+
+div{
+	background-color: lightblue;
+	padding: 10px;
+}
+
+h1, h3{
+	font-family: Arial; 
+}
+
+h1{font-size: 40px}
+
+article { 
+	text-align: justify;
+	/*border: 2px solid green;*/
+}
+
+.article_head{
+	text-align: justify;
+}
+	.article_head h1{
+	margin: 0;
+	}
+	.article_head h3{
+	margin: 0;
+	width: max-content;
+	border-bottom: 2px solid purple;
+	}
+
+.section_T1{
+	min-width: max-content;
+	overflow: auto;
+	;
+}
+
+.section_T2{
+	max-width: 90%;
+	min-width, min-height: 300px, 300px;
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+}
+
+	.section_T2 p{
+		margin: 0;
+	}
+
+.article_1 {
+	text-align: justify;
+	/*border: 2px solid greenyellow;*/
+}
+
+	.article_1 h3 {
+		border-bottom: 2px solid purple;
+		margin: 0;
+	}
+
+.inline_list {
+	display: flex;
+	max-width: 800px;
+	min-width: 500px;
+}
+	
+	.inline_list li {
+	margin-right: 10px;
+	flex:1;
+	}
+
+@media screen and (max-width: 500px) {
+    .inline_list {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
