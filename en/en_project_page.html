@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio Karl Koffi</title>
+		<link rel="icon" type="image/ico" href="../images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	 <!-- <li></li> rgb(8, 118, 150)-->
+	<body>
+
+		<header class="header"> <!-- Top of the page -->
+			<h1>Portfolio Karl Koffi</h1>
+		</header>
+
+		<nav class="navbar"> <!-- Used to display the basic links in the home page -->
+			<ul class="nav-list">
+				<li><a href="en_project_page.html" target="_self">Home</a></li>
+
+				<li class="dropdown">
+					<a onclick="displayer('MENU')">Projects</a>
+					<ul class="dropdown-menu" id="MENU" state="up">
+						<li><a href="en_project_1.html" target="_self">Project #1</a></li>
+						<li><a href="en_project_2.html" target="_self">Project #2</a></li>
+					</ul>
+				</li>
+
+				<li><a href="en_contacts.html" target="_self">Contact</a></li>
+
+				<li class="dropdown">
+					<a onclick="displayer('MENU-FR')">Lang.</a>
+					<ul class="dropdown-menu" id="MENU-FR" state="up">
+						<li><a href="../fr/fr_project_page.html" target="_self">FR</a></li>
+						<li><a href="" target="_self">ENG</a></li>
+					</ul>
+				</li>
+
+				<label class="switch">
+				  <input type="checkbox" id="switch-input">
+				  <span class="slider round"></span>
+				</label>
+
+			</ul>
+		</nav>
+
+		<div class="main_content">
+			<article class="art_1">
+				<h2>Who am I?</h2>
+				<p>
+					My name is Koffi Karl. I'm 20 years old and I'm a college student at Sorbonne Paris Nord in France. This website's purpose is to regroup every programming projects that I will create.
+				</p>
+			</article>
+
+			<article class="art_1">
+				<h2>Why programming?</h2>
+
+				<p>
+					I really appreaciate computer science, especially when it's about programming. In 2022, I've learned how to code in Python and started trying out my skills in game development.
+				</p>
+
+				<p>
+					As time passed, I started sharing some of the program I made. There's still a lot for me to learn but I still hope that what I've managed to do until now may pique your interest. If you wish to follow my progress in gamedev, you can follow <a href="https://de-kleer.itch.io/" target='_blank'>my page on itch.io</a>.
+				</p>
+			</article>
+			<button id="scrollButton"><p class="arrow-up"></p></button>
+		</div>
+
+		<footer class="footer">
+			<p>© Koffi Karl</p>
+		</footer>
+		<script src="../js/scripts.js"></script>
+	<body>
+</html>

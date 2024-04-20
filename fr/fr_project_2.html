@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio Karl Koffi</title>
+		<link rel="icon" type="image/ico" href="../images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	</head>
+	 <!-- <li></li> rgb(8, 118, 150)-->
+	<body>
+
+		<header class="header"> <!-- Top of the page -->
+			<h1>Portfolio Karl Koffi</h1>
+		</header>
+
+		<nav class="navbar"> <!-- Used to display the basic links in the home page -->
+			<ul class="nav-list">
+				<li><a href="fr_project_page.html" target="_self">Home</a></li>
+
+				<li class="dropdown">
+					<a onclick="displayer('MENU')">Projets</a>
+					<ul class="dropdown-menu" id="MENU" state="up">
+						<li><a href="fr_project_1.html" target="_self">Projet #1</a></li>
+						<li><a href="fr_project_2.html" target="_self">Projet #2</a></li>
+					</ul>
+				</li>
+
+				<li><a href="fr_contacts.html" target="_self">Contact</a></li>
+
+				<li class="dropdown">
+					<a onclick="displayer('MENU-FR')">Lang.</a>
+					<ul class="dropdown-menu" id="MENU-FR" state="up">
+						<li><a href="" target="_self">FR</a></li>
+						<li><a href="../en/en_project_2.html" target="_self">EN</a></li>
+					</ul>
+				</li>
+
+				<label class="switch">
+				  <input type="checkbox" id="switch-input">
+				  <span class="slider round"></span>
+				</label>
+
+			</ul>
+		</nav>
+
+		<div class="main_content_2">
+
+			<div class="collapsible-section" id="cop_11">
+				<div class="table_of_content">
+					<h4><span class="#highlight">Sommaire</span></h4>
+					<ol>
+						<li><a href="#presentation">Présentation</a></li>
+						<li><a href="#developpement">Développement</a></li>
+						<!--
+							<li><a href="#comment jouer">Comment Jouer ?</a>
+								<ul>
+									<li><a href="#organisation de l'ecran">Organisation de l'écran</a></li>
+									<li><a href="#commandes">Commandes</a></li>
+									<li><a href="#Types d'ennemis">Types d'ennemis</a></li>
+									<li><a href="#Bonus">Power-Ups</a></li>
+								</ul>
+							</li>
+							<li><a href="#acceder au jeu">Accéder au jeu</a></li>
+						-->
+						<li><a href="#galerie">Galerie</a></li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="main_content_sub">
+				<article class="space_section">
+					<button class="toggle_button invisible_button" data-target="cop_11">< Sommaire</button>
+
+					<div class="summary_header">
+						<div class="summary_header_sub_1">
+							<button class="toggle_button" data-target="cop_10">Sommaire ></button>
+						</div>
+					
+						<div class="hidden_table">
+							<!-- 
+								Small issue in this display: you have to click twice to make the hidden table 
+								appear when using a class. This is very annoying. Putting the style inside the HTML block solves the issue, but its a bad solution...
+							-->
+
+							<div style="display: none; border: 2px dotted black;" id="cop_10">
+								<ol>
+									<li><a href="#presentation">Présentation</a></li>
+									<li><a href="#developpement">Développement</a></li>
+									<!--
+										<li><a href="#comment jouer">Comment Jouer ?</a>
+											<ul>
+												<li><a href="#organisation de l'ecran">Organisation de l'écran</a></li>
+												<li><a href="#commandes">Commandes</a></li>
+												<li><a href="#Types d'ennemis">Types d'ennemis</a></li>
+												<li><a href="#Bonus">Power-Ups</a></li>
+											</ul>
+										</li>
+										<li><a href="#acceder au jeu">Accéder au jeu</a></li>
+									-->
+									<li><a href="#galerie">Galerie</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+
+					<div class="page_title">
+						<h2>Dungeons!</h2>
+						<figure>
+							<img src='../images/P2/dungeons!.png' alt="Intitulé du jeu">
+							<figcaption>Titre du jeu</figcaption>
+						</figure>
+					</div>
+				</article>
+
+				<article id="presentation" class="space_section">
+					<div class="sub_header">
+						<h3>Présentation</h3>
+						<button class="toggle_button" data-target="cop_9"><p class="arrow-down"></p></button>
+					</div>
+
+					<div class="collapsible-section hidden_div" id="cop_9">
+						<p>
+							"Dungeons!" est un <a href="https://fr.wikipedia.org/wiki/Dungeon_crawler" target="_blank">RPG Dungeon crawler</a> que j'ai commencé à développer lorsque j'ai terminé mon premier projet en fin 2022. Dans ce jeu, le joueur incarnera un aventurier dont l'objectif sera d'explorer les profondeurs d'un donjon. Au cours de cette aventure, vous allez faire face à de nombreux obstacles, mais aussi obternir de précieux alliés.
+						</p>
+					</div>
+				</article>
+
+				<article id="developpement" class="space_section">
+					<div class="sub_header">
+						<h3>Développement</h3>
+						<button class="toggle_button" data-target="cop_8"><p class="arrow-down"></p></button>
+					</div>
+					
+					<div class="collapsible-section hidden_div" id="cop_8">
+						<p>
+							"Dungeons!" est actuellement développé avec le langage Python, en particulier grâce à la librairie <a href="https://www.pygame.org/wiki/about" target="_blank">PyGame</a>. 
+							Les graphismes du jeu sont réalisés avec la technique du <a href="https://fr.wikipedia.org/wiki/Raycasting" target="_blank">raycasting</a>.
+						</p>
+
+						<p>
+							Le jeu étant encore en développement, je ne peux que fournir quelques captures d'écran décrivant l'apparence du jeu.
+						</p>
+					</div>
+				</article>
+				<!--
+					Irrelevant parts have been temporarily commented out. As the game developpement progresses
+					they will be added at a later date
+				-->
+				<!--
+					<div id="comment jouer" class="space_section">
+						<div class="sub_header">
+							<h3>Comment jouer ?</h3>
+							<button class="toggle_button" data-target="cop_3"><p class="arrow-down"></p></button>
+						</div>
+						<article>					
+							<div class="collapsible-section hidden_div" id="cop_3">
+								<article id="organisation de l'ecran">
+									<div class="sub_header">
+										<h4>Organisation de l'écran</h4>
+										<button class="toggle_button" data-target="cop_4"><p class="arrow-down"></p></button>
+									</div>
+
+									<div class="collapsible-section hidden_div" id="cop_4">
+										<figure  class="sub_picture">
+											<img src='images/P1/Space_fighter_2.png' alt="Description de l'écran de Jeu">
+											<figcaption>Présentation du jeu</figcaption>
+										</figure>
+										<p>Sur l'écran de jeu, vous pouvez retrouver:</p>
+										<ul>
+											<li>①: "Wave" représente le nombre de vagues d'ennemis. Plus cette valeur augmente, plus le nombre d'ennemis pas vagues augmente.</li>
+
+											<li>②: "Energy" est une valeur qui baisse à chaque fois qu'un ennemi atteint le bout de l'écran. <span class="highlight">Si "Energy" atteint 0, vous perdez la partie.</span></li>
+
+											<li>③: "Score" une valeur qui augmente en fonction du nombre d'ennemis vaincus par le joueur.</li>
+
+											<li>④: Cadre destiné aux power-ups obtenus par le joueur.</li>
+
+											<li>⑤: Un Ennemi.</li>
+
+											<li>⑥: Vaisseau du joueur. <span class="highlight">Si la barre de vie atteint 0, vous perdez la partie.</span></li>
+										</ul>
+									</div>
+								</article>
+
+								<article id="commandes">
+									<div class="sub_header">
+										<h4>Commandes</h4>
+										<button class="toggle_button" data-target="cop_5"><p class="arrow-down"></p></button>
+									</div>
+
+									<div class="collapsible-section hidden_div" id="cop_5">
+										<ul>
+											<li><b>&larr;</b>: Bouger à gauche</li>
+											<li><b>&rarr;</b>: Bouger à droite</li>
+											<li><b>&uarr;</b>: Bouger vers le haut</li>
+											<li><b>&darr;</b>: Bouger vers le bas</li>
+											<li><b>Barre d'espace</b>: tirer sur les ennemis</li>
+											<li><b>ENTRER</b>: menu de pause</li>
+										</ul>
+										<p>
+											Pour éliminer un ennemi, il suffit de tirer sur lui jusqu'a ce qu'il soit détruit. Alternativement, vous pouvez aussi entrer en collision avec un ennemi: <span class="highlight">ce dernier sera immédiatement détruit, cepedant, votre vaisseau prendra des dégats</span>
+										</p>
+									</div>
+								</article>
+
+								<article id="Types d'ennemis">
+									<div class="sub_header">
+										<h4>Types d'entités</h4>
+										<button class="toggle_button" data-target="cop_6"><p class="arrow-down"></p></button>
+									</div>
+									
+									<div class="collapsible-section hidden_div" id="cop_6">
+										<table class="enemy_table">
+											<tr>
+												<th>Corps</th><th>Munition</th><th>Vie</th><th>Dégats</th><th>Score</th>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/ALIEN-T1.png" alt="Enemy spaceship 1"></img></td> 
+												<td><img src="images/P1/T_1_MISS_FINAL.png" alt="Enemy missile 1"></img></td> 
+												<td>10</td> 
+												<td>10</td> 
+												<td>+5</td>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/ALIEN-T2.png" alt="Enemy spaceship 2"></img>
+												</td>
+												<td><img src="images/P1/T_2_MISS.png" alt="Enemy missile 2"></img></td> 
+												<td>20</td> 
+												<td>15</td> 
+												<td>+10</td>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/ALIEN-T_3.png" alt="Enemy spaceship 3"></img></td> 
+												<td><img src="images/P1/T_3_MISS_FINAL.png" alt="Enemy missile 3"></img></td> 
+												<td>30</td> 
+												<td>20</td> 
+												<td>+20</td>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/Meteor-1.png" alt="Enemy meteor"></img></td> 
+												<td><span class="highlight">N/A</span></td> 
+												<td><span class="highlight">N/A</span></td> 
+												<td>25</td> 
+												<td><span class="highlight">N/A</span></td>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/Player_Entity.png" alt="Player spaceship"></img></td> 
+												<td>
+													<img src="images/P1/PMISS.png" alt="Player missile 1"></img>
+													<img src="images/P1/PMISS_2.png" alt="Player missile 2"></img>
+													<img src="images/P1/PMISS_3.png" alt="Player missile 3"></img>
+													<img src="images/P1/PMISS_switch.png" alt="Player missile 4"></img>
+												</td> 
+												<td>100</td> 
+												<td>10/15/20/10</td> 
+												<td><span class="highlight">N/A</span></td>
+											</tr>
+										</table>
+										<p>
+											Il existe un total de 4 ennemis/obstacles auquel le joueur doit faire face. Les vaisseaux apparairaissent de plus en plus nombreux avec l'augmentation du niveau de vague.
+											<br>Une entité spéciale du jeu <b>ne peut être détruite et doit être obligatoirement évitée</b>: il s'agit du météore.
+											<br>Pour faire face à ses adversaire, votre vaisseau bénéficie de plusieurs types de munitions retrouvables dans des power-ups.
+										</p>
+									</div>
+
+								</article>
+
+								<article id="Bonus">
+									<div class="sub_header">
+										<h4>Power-Ups</h4>
+										<button class="toggle_button" data-target="cop_7"><p class="arrow-down"></p></button>
+									</div>
+
+									<div class="collapsible-section hidden_div" id="cop_7">
+										<p>Les power ups sont des bonus qui apparaissent aléatoirement au au cours de certaines vagues d'ennemis. Récupérez la bulle du power-up pour en recevoir un au hasard parmi une liste donnée.</p>
+										
+										<figure class="sub_picture_2">
+											<img src="images/P1/powerup.gif" alt="Picture of powerup"></img>
+											<figcaption>Bulle de Power-Up</figcaption>
+										</figure>
+
+										<table class="enemy_table">
+											<tr>
+												<th>Icône</th><th>Nom</th><th>Effet</th>
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup1.png" alt="Power-Ups icône 1"></img></td> 
+												<td>Vitesse +</td> 
+												<td>Augmente la vitesse de déplacement et la vitesse de tir du vaisseau du joueur. Cumulable.</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup2.png" alt="Power-Ups icône 2"></img>
+												</td>
+												<td>Munition 1</td> 
+												<td>Change le type de munition du joueur. Inflige 15 dégats par tirs.</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup3.png" alt="Power-Ups icône 3"></img></td> 
+												<td>Energie +</td> 
+												<td>Le joueur récupérère de la vie (20) et de l'énergie (5).
+													<br>Si un bouclier est actif, il récupère aussi de l'énergie (30).
+												</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup4.png" alt="Power-Ups icône 4"></img></td> 
+												<td>Bouclier</td> 
+												<td>Un boulier prend des dégâts à la place du joueur (200 de vie). Peut être réparé</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup5.png" alt="Power-Ups icône 5"></img></td> 
+												<td>Munition 2</td> 
+												<td>Change le type de munition du joueur. Inflige autant de dommages que le tir de base (10), mais la cadence de tir est plus rapide et le tir plus large.</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/powerup6.png" alt="Power-Ups icône 6"></img></td> 
+												<td>Munition 3</td> 
+												<td>Change le type de munition du joueur. Inflige 20 dégats par tirs.</td> 
+											</tr>
+
+											<tr>
+												<td><img src="images/P1/Battery.gif" alt="Power-Ups icône 7"></img></td> 
+												<td>Batterie</td> 
+												<td>Le joueur récupérère de la vie (20) et de l'énergie (5).
+													<br>Si un bouclier est actif, il récupère aussi de l'énergie (30).
+												</td> 
+											</tr>
+										</table>
+
+										<p><span class="highlight">NB:</span> la batterie est le seul power-up qui est garanti d'apparaître tout les 3 tours</p>
+									</div>
+
+								</article>
+							</div>
+						</article>
+					</div>
+
+					<article id="acceder au jeu" class="space_section">
+						
+						<div class="sub_header">
+							<h3>Accéder au jeu</h3>
+							<button class="toggle_button" data-target="cop_2"><p class="arrow-down"></p></button>
+						</div>
+
+						<div class="collapsible-section" id="cop_2">
+							<div class="iframe_tch">
+								<p>Vous pous accéder au jeu en le téléchargeant depuis ma page sur itch.io</p>
+								
+								<iframe src="https://itch.io/embed/2325694">
+									<a href="https://de-kleer.itch.io/space-fighter" title="télécharger Space Fighter">Space Fighter by De Kleer</a>
+								</iframe>
+							</div>
+						</div>				
+					</article>
+				-->
+				<article id="galerie" class="space_section">
+					<div class="sub_header">
+						<h3>Galerie</h3>
+						<button class="toggle_button" data-target="cop_1"><p class="arrow-down"></p></button>
+					</div>
+					
+					<div class="galerie-container collapsible-section" id="cop_1">
+
+						<div class="button-container">
+				            <button class="arrow-button prev" onclick="prevImage()"></button>
+				        </div>
+
+				        <div class="image-container">
+				            <img src="../images/P2/GAL1.png" alt="Image de galerie 1" id="galleryImage">
+				            <figcaption>Donjon</figcaption>
+				            <figcaption class="gallery_counter">1/10</figcaption>
+				        </div>
+
+				        <div class="button-container">
+				            <button class="arrow-button next" onclick="nextImage()"></button>
+				        </div>
+
+				    </div>
+
+				</article>			
+			</div>
+			<button id="scrollButton"><p class="arrow-up"></p></button>
+		</div>
+
+		<footer class="footer">
+			<p>© Koffi Karl</p>
+		</footer>
+
+		<script src="../js/scripts.js"></script>
+		<script src="../js/p2_gallery.js"></script>
+	<body>
+</html>
