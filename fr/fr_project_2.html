@@ -11,16 +11,16 @@
 	 <!-- <li></li> rgb(8, 118, 150)-->
 	<body>
 
-		<header class="header"> <!-- Top of the page -->
+		<header class="header notranslate"> <!-- Top of the page -->
 			<h1>Portfolio Karl Koffi</h1>
 		</header>
 
-		<nav class="navbar"> <!-- Used to display the basic links in the home page -->
+		<nav class="navbar notranslate"> <!-- Used to display the basic links in the home page -->
 			<ul class="nav-list">
 				<li><a href="fr_project_page.html" target="_self">Home</a></li>
 
 				<li class="dropdown">
-					<a onclick="displayer('MENU')">Projets</a>
+					<a>Projets</a> <!--onclick="displayer('MENU')" initially there-->
 					<ul class="dropdown-menu" id="MENU" state="up">
 						<li><a href="fr_project_1.html" target="_self">Projet #1</a></li>
 						<li><a href="fr_project_2.html" target="_self">Projet #2</a></li>
@@ -30,10 +30,10 @@
 				<li><a href="fr_contacts.html" target="_self">Contact</a></li>
 
 				<li class="dropdown">
-					<a onclick="displayer('MENU-FR')">Lang.</a>
+					<a>Langue</a> <!--onclick="displayer('MENU-FR')" initially there-->
 					<ul class="dropdown-menu" id="MENU-FR" state="up">
-						<li><a href="" target="_self">FR</a></li>
-						<li><a href="../en/en_project_2.html" target="_self">EN</a></li>
+						<li><a href="" target="_self">FR 🇫🇷</a></li>
+						<li><a href="../en/en_project_2.html" target="_self">ENG 🇬🇧</a></li>
 					</ul>
 				</li>
 
@@ -71,11 +71,11 @@
 
 			<div class="main_content_sub">
 				<article class="space_section">
-					<button class="toggle_button invisible_button" data-target="cop_11">< Sommaire</button>
+					<button class="toggle_button invisible_button" data-target="cop_11">Sommaire</button>
 
 					<div class="summary_header">
 						<div class="summary_header_sub_1">
-							<button class="toggle_button" data-target="cop_10">Sommaire ></button>
+							<button class="toggle_button" data-target="cop_10">Sommaire</button>
 						</div>
 					
 						<div class="hidden_table">
