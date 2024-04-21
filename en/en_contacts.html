@@ -8,19 +8,19 @@
 		<link rel="icon" type="image/ico" href="../images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/styles.css">
 	</head>
-	 <!-- <li></li> rgb(8, 118, 150)-->
+	 
 	<body>
 
-		<header class="header"> <!-- Top of the page -->
+		<header class="header notranslate"> <!-- Top of the page -->
 			<h1>Portfolio Karl Koffi</h1>
 		</header>
 
-		<nav class="navbar"> <!-- Used to display the basic links in the home page -->
+		<nav class="navbar notranslate"> <!-- Used to display the basic links in the home page -->
 			<ul class="nav-list">
 				<li><a href="en_project_page.html" target="_self">Home</a></li>
 
 				<li class="dropdown">
-					<a onclick="displayer('MENU')">Projects</a>
+					<a>Projects</a> <!--onclick="displayer('MENU')" initially there-->
 					<ul class="dropdown-menu" id="MENU" state="up">
 						<li><a href="en_project_1.html" target="_self">Project #1</a></li>
 						<li><a href="en_project_2.html" target="_self">Project #2</a></li>
@@ -30,10 +30,10 @@
 				<li><a href="en_contacts.html" target="_self">Contact</a></li>
 
 				<li class="dropdown">
-					<a onclick="displayer('MENU-FR')">Lang.</a>
+					<a onclick="displayer('MENU-FR')">Language</a>
 					<ul class="dropdown-menu" id="MENU-FR" state="up">
-						<li><a href="../fr/fr_contacts.html" target="_self">FR</a></li>
-						<li><a href="" target="_self">ENG</a></li>
+						<li><a href="../fr/fr_contacts.html" target="_self">FR 🇫🇷</a></li>
+						<li><a href="" target="_self">ENG 🇬🇧</a></li>
 					</ul>
 				</li>
 
