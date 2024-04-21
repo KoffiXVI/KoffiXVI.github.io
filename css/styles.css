@@ -53,7 +53,7 @@ body {display: flex;
 				text-decoration: underline;
 			}
 			a:visited{
-				color:red;
+				color:purple;
 			}
 
 			h2{
@@ -183,36 +183,7 @@ body {display: flex;
 			.invisible_button {
 			  position: absolute;
 			}
-			/*GALLERY DATA
-				.galerie{
-					display: inline-flex;
-					flex-direction: row;
-					width: auto;
-					height: auto; 
-					max-width: 1000px;
-					margin: 0 auto; 
-					overflow: scroll;
-					padding: 10px 0;				
-				}
-					.galerie figure{
-						
-						width: max-content;
-						height: auto;
-						border: 2px solid red;
-					}
-
-					.galerie img{
-						width: auto;
-						max-height: 800px; 
-						padding-right: 5px;
-					}
-
-					.galerie figcaption {
-					    text-align: center;
-					    font-style: italic;
-					}
-				*/
-
+			
 			/* NEW GALLERY DATA */
 			.galerie-container {
 					padding-top: 20px;
@@ -331,6 +302,7 @@ body {display: flex;
 				background-color: darkgrey; 
 				padding: 0px;
 			}
+
 			.navbar {
 				background-color: rgb(49, 54, 69); 
 				padding: 0px 0px ;
@@ -364,6 +336,7 @@ body {display: flex;
 				    background-color: darkgrey;
 				    cursor: pointer;				    
 				}
+				
 
 				.dropdown-menu {
 				    display: none;
@@ -379,7 +352,7 @@ body {display: flex;
 						text-align: center;
 						max-height: max-content;
 							margin:0px 0px 5px 0px;						    
-						}
+					}
 
 					.dropdown-menu li a{
 						padding:0px 10px;
@@ -441,7 +414,7 @@ body {display: flex;
 				/*border:3px solid blue*/
 			}
 				.art_1 h1 {
-					text-align: center;
+					/*text-align: center;*/
 					border-bottom: 2px solid black;
 				}
 			
@@ -721,7 +694,16 @@ body {display: flex;
     .summary_header{
 				display: inline-flex;
 			}
+
+		h2, p{
+				text-align: left; 
+			}
+		.footer p{
+			text-align: center;
+		}
 }
+
+
 
 @media screen and (width: 830px) {
     .invisible_button{
@@ -737,4 +719,4 @@ body {display: flex;
     font-weight: normal; /*400*/
     font-display: swap;
 }
-			
+					
